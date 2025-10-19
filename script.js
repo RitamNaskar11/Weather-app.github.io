@@ -1,5 +1,5 @@
-const apiKey = "b07eefbb8864494db0445658251510";
-const baseUrl = "https://api.weatherapi.com/v1";
+const apiKey = "e0aeb5504ac946aeb5455620251710";
+const baseUrl = "http://api.weatherapi.com/v1";
 
 const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
