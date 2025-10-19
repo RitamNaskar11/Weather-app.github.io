@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h1><i class="fa-solid fa-cloud"></i>Weather App</h1>
+    <div class="controls">
+      <button id="themeToggle" title="Toggle Theme">🌙</button>
+      <button id="unitToggle" title="Toggle °C / °F">°C / °F</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="weatherInfo" class="weather-info">
+      <img src="/img/weather-img.jpg" alt="">
+    </div>
+    <div id="details" class="details">
+      
+    </div>
+    <div id="sunData" class="sun-data">
+ <i class="hgi hgi-stroke hgi-sunrise"></i>
+    </div>
+
+
+    <section class="forecast-section">
+      <h3 class="section-title"><i class="fa-solid fa-cloud-sun"></i>Hourly Forecast</h3>
+      <div id="hourlyForecast" class="forecast hourly"></div>
+    </section>
+
+
+    <section class="forecast-section">
+      <h3 class="section-title"><i class="fa-solid fa-calendar-days"></i>5-Day Forecast</h3>
+      <div class="forecast" id="forecast"></div>
+    </section>
+
+
+    <div class="favorites">
+      <h3><i class="fa-solid fa-star"></i>Favorite Cities</h3>
+      <ul id="favList">
+
+        
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://kit.fontawesome.com/37e4fc56b7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
